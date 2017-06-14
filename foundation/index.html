@@ -1,0 +1,2460 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <!--<meta class="foundation-mq-small">
+    <meta class="foundation-mq-small-only">
+    <meta class="foundation-mq-medium">
+    <meta class="foundation-mq-medium-only">
+    <meta class="foundation-mq-large">
+    <meta class="foundation-mq-large-only">
+    <meta class="foundation-mq-xlarge">
+    <meta class="foundation-mq-xlarge-only">
+    <meta class="foundation-mq-xxlarge">
+    <meta class="foundation-data-attribute-namespace">-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="5.5.3/css/foundation.min.css">
+    <link rel="stylesheet" href="5.5.3/css/foundation-icons.css">
+    <style>
+        .percentage {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: white;
+            transform: translate(-50%, -50%);
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="padding:20px;">
+        <h2>标题</h2>
+        <p>标题不同元素字体大小不一样。以下字体默认加粗，不同设备尺寸显示的字体也是不一样的，你可以通过重置浏览器窗口大小查看效果。</p>
+        <h1>h1 标题 (<strong>2.125rem</strong> - 2.75rem)</h1>
+        <h2>h2 标题 (<strong>1.6875rem</strong> - 2.3125rem)</h2>
+        <h3>h3 标题 (<strong>1.375rem</strong> - 1.6875rem)</h3>
+        <h4>h4 标题 (<strong>1.125rem</strong> - 1.4375rem)</h4>
+        <h5>h5 标题 (1.125rem)</h5>
+        <h6>h6 标题 (1rem)</h6>
+    </div>
+    <div style="padding:20px;">
+        <h2>副标题</h2>
+        <p> .subheader 类让标题的文本颜色变浅。</p>
+        <h1 class="subheader">h1.subheader</h1>
+        <h2 class="subheader">h2.subheader</h2>
+        <h3 class="subheader">h3.subheader</h3>
+        <h4 class="subheader">h4.subheader</h4>
+        <h5 class="subheader">h5.subheader</h5>
+        <h6 class="subheader">h6.subheader</h6>
+    </div>
+    <div style="padding:20px;">
+        <h2>Small</h2>
+        <p>small 元素用于创建一个浅色的副标题。</p>
+        <h1>h1 heading <small>secondary text</small></h1>
+        <h2>h2 heading <small>secondary text</small></h2>
+        <h3>h3 heading <small>secondary text</small></h3>
+        <h4>h4 heading <small>secondary text</small></h4>
+        <h5>h5 heading <small>secondary text</small></h5>
+        <h6>h6 heading <small>secondary text</small></h6>
+    </div>
+    <div style="padding:20px;">
+        <h2>链接</h2>
+        <p>Foundation 的 <a href="#">链接样式</a>。</p>
+    </div>
+    <div style="padding:20px;">
+        <h2>Abbreviations</h2>
+        <p>abbr 元素用于标签指示简称或缩写。</p>
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    </div>
+    <div style="padding:20px;">
+        <h2>引用</h2>
+        <p>blockquote 元素用于定义块引用。</p>
+        <blockquote>
+            <p>学的不仅是技术，更是梦想！</p>
+            <cite>菜鸟教程</cite>
+        </blockquote>
+    </div>
+    <div style="padding:20px;">
+        <h2>描述列表</h2>
+        <p>dl 元素用于定义一个描述性列表：</p>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+        </dl>
+    </div>
+    <div style="padding:20px;">
+        <h2>Code 片段</h2>
+        <p>代码片段展示可以使用 code 元素:</p>
+        <p>以下 HTML 元素: <code>span</code>, <code>section</code>, 和 <code>div</code> 是文档的一部分。</p>
+    </div>
+    <div style="padding:20px;">
+        <h2>键盘输入</h2>
+        <p>使用 kbd 元素来接收键盘的输入指令:</p>
+        <p>按下 <kbd>ctrl + p</kbd> 键打开打印窗口。</p>
+    </div>
+    <div style="padding:20px;">
+        <h2>水平线</h2>
+        <p>Foundation 中 hr 元素是灰色的。</p>
+        <hr>
+    </div>
+
+    <div style="padding:20px;">
+        <h2>基本表格</h2>
+        <p>Foundation 的 table 元素样式为灰色斑马条纹且包含四个边框：</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div style="padding:20px;">
+        <h2>响应式表格</h2>
+        <p>在 div 元素上添加 overflow-x:auto 样式，让它支持响应式。</p>
+        <p>重置浏览器窗口查看效果 (如果空间不足会出现垂直滚动条)。</p>
+        <div class="responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                        <th>City</th>
+                        <th>Age</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                        <td>New York</td>
+                        <td>35</td>
+                        <td>USA</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                        <td>Chicago</td>
+                        <td>51</td>
+                        <td>USA</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                        <td>San Francisco</td>
+                        <td>38</td>
+                        <td>USA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>按钮样式</h2>
+        <button type="button" class="button">Default</button>
+        <button type="button" class="button secondary">Secondary</button>
+        <button type="button" class="button success">Success</button>
+        <button type="button" class="button info">Info</button>
+        <button type="button" class="button warning">Warning</button>
+        <button type="button" class="button alert">Alert</button>
+    </div>
+    <div style="padding:20px;">
+        <h2>按钮元素</h2>
+        <a href="#" class="button info" role="button">链接按钮</a>
+        <button type="button" class="button info">按钮</button>
+        <input type="button" class="button info" value="Input 按钮">
+        <input type="submit" class="button info" value="Submit 按钮">
+    </div>
+    <div style="padding:20px;">
+        <h2>按钮大小</h2>
+        <button type="button" class="button large">Large</button>
+        <button type="button" class="button">Default</button>
+        <button type="button" class="button small">Small</button>
+        <button type="button" class="button tiny">Tiny</button>
+    </div>
+    <div style="padding:20px;">
+        <h2>圆角按钮</h2>
+        <button type="button" class="button">Default Button</button>
+        <button type="button" class="button radius">Radius Button</button>
+        <button type="button" class="button round">Round Button</button>
+    </div>
+    <div style="padding:20px;">
+        <h2>延展按钮</h2>
+        <button type="button" class="button">Default</button>
+        <button type="button" class="button expand">Expanded Button</button>
+    </div>
+    <div style="padding:20px;">
+        <h2>禁用按钮</h2>
+        <button type="button" class="button">Default Button</button>
+        <button type="button" class="button disabled">Disabled Button</button>
+    </div>
+    <div style="padding:20px;">
+        <h2>按钮组</h2>
+        <ul class="button-group">
+            <li><button type="button" class="button">Apple</button></li>
+            <li><button type="button" class="button">Samsung</button></li>
+            <li><button type="button" class="button">Sony</button></li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>垂直按钮组</h2>
+        <p>垂直按钮组使用 .stack 类来创建。注意，按钮会跨越父元素的整个宽度。</p>
+        <ul class="button-group stack">
+            <li><button type="button" class="button">Apple</button></li>
+            <li><button type="button" class="button">Samsung</button></li>
+            <li><button type="button" class="button">Sony</button></li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>垂直按钮组</h2>
+        <p>.stack-for-small 类用于小尺寸的屏幕，按钮由水平排列变为垂直排列(重置窗口大小查看效果)：</p>
+        <ul class="button-group stack-for-small">
+            <li><button type="button" class="button">Apple</button></li>
+            <li><button type="button" class="button">Samsung</button></li>
+            <li><button type="button" class="button">Sony</button></li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>圆角按钮组</h2>
+        <p>圆角按钮组:button-group radius</p>
+        <ul class="button-group radius">
+            <li><button type="button" class="button">Apple</button></li>
+            <li><button type="button" class="button">Samsung</button></li>
+            <li><button type="button" class="button">Sony</button></li>
+        </ul>
+
+        <p>圆形按钮组:button-group round</p>
+        <ul class="button-group round">
+            <li><button type="button" class="button">Apple</button></li>
+            <li><button type="button" class="button">Samsung</button></li>
+            <li><button type="button" class="button">Sony</button></li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h3>均匀延展按钮组:</h3>
+
+        <p>均匀延展三个按钮:even-3</p>
+        <ul class="button-group even-3">
+            <li><button type="button" class="button">Apple</button></li>
+            <li><button type="button" class="button">Samsung</button></li>
+            <li><button type="button" class="button">Sony</button></li>
+        </ul>
+
+        <p>均匀延展五个按钮:even-5</p>
+        <ul class="button-group even-5">
+            <li><button type="button" class="button">Apple</button></li>
+            <li><button type="button" class="button">Samsung</button></li>
+            <li><button type="button" class="button">Sony</button></li>
+            <li><button type="button" class="button">HTC</button></li>
+            <li><button type="button" class="button">Huawei</button></li>
+        </ul>
+
+        <p>均匀延展八个按钮:even-8</p>
+        <ul class="button-group even-8">
+            <li><button type="button" class="button">A</button></li>
+            <li><button type="button" class="button">B</button></li>
+            <li><button type="button" class="button">C</button></li>
+            <li><button type="button" class="button">D</button></li>
+            <li><button type="button" class="button">E</button></li>
+            <li><button type="button" class="button">F</button></li>
+            <li><button type="button" class="button">G</button></li>
+            <li><button type="button" class="button">H</button></li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>下拉菜单按钮</h2>
+        <a href="#" data-dropdown="id01" class="button dropdown">Dropdown Button</a>
+        <ul id="id01" data-dropdown-content class="f-dropdown">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>分割按钮</h2>
+        <button class="button split">Split Button <span data-dropdown="id01"></span></button>
+        <ul id="id01" data-dropdown-content class="f-dropdown">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>图标实例</h2>
+        <p>Cloud icon: <i class="fi-cloud"></i></p>
+        <p>Cloud icon as a link:
+            <a href="#"><i class="fi-cloud"></i></a>
+        </p>
+        <p>Styled Cloud icon: <i class="fi-cloud" style="font-size:35px;color:red;"></i></p>
+        <p>Home icon: <i class="fi-home"></i></p>
+        <p>Home icon on a button:
+            <button type="button" class="button">
+    <i class="fi-home"></i> Home 
+  </button>
+        </p>
+        <p>Home icon on a green button:
+            <button type="button" class="button success">
+    <i class="fi-home"></i> Home 
+  </button>
+        </p>
+        <p>Home icon on a large, light blue link button:
+            <a href="#" class="button info large">
+                <i class="fi-home"></i> Home
+            </a>
+        </p>
+    </div>
+
+    <div style="padding:20px;">
+        <h2>Icon Bar</h2>
+        <div class="icon-bar five-up">
+            <a href="#" class="item">
+                <i class="fi-home"></i>
+            </a>
+            <a href="#" class="item">
+                <i class="fi-share"></i>
+            </a>
+            <a href="#" class="item">
+                <i class="fi-info"></i>
+            </a>
+            <a href="#" class="item">
+                <i class="fi-mail"></i>
+            </a>
+            <a href="#" class="item">
+                <i class="fi-magnifying-glass"></i>
+            </a>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>图标工具栏</h2>
+        <div class="icon-bar five-up">
+            <a href="#" class="item">
+                <i class="fi-home"></i>
+                <label>Home</label>
+            </a>
+            <a href="#" class="item">
+                <i class="fi-share"></i>
+                <label>Share</label>
+            </a>
+            <a href="#" class="item">
+                <i class="fi-info"></i>
+                <label>Info</label>
+            </a>
+            <a href="#" class="item">
+                <i class="fi-mail"></i>
+                <label>Mail</label>
+            </a>
+            <a href="#" class="item">
+                <i class="fi-magnifying-glass"></i>
+                <label>Search</label>
+            </a>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>图标工具栏</h2>
+        <div class="icon-bar five-up">
+            <a href="#" class="item">
+                <i class="fi-home"></i>
+            </a>
+            <a href="#" class="item disabled">
+                <i class="fi-share"></i>
+            </a>
+            <a href="#" class="item">
+                <i class="fi-info"></i>
+            </a>
+            <a href="#" class="item disabled">
+                <i class="fi-mail"></i>
+            </a>
+            <a href="#" class="item">
+                <i class="fi-magnifying-glass"></i>
+            </a>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>图标工具栏</h2>
+        <div class="icon-bar vertical five-up">
+            <a href="#" class="item">
+                <i class="fi-home"></i>
+            </a>
+            <a href="#" class="item">
+                <i class="fi-share"></i>
+            </a>
+            <a href="#" class="item">
+                <i class="fi-info"></i>
+            </a>
+            <a href="#" class="item">
+                <i class="fi-mail"></i>
+            </a>
+            <a href="#" class="item">
+                <i class="fi-magnifying-glass"></i>
+            </a>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>标签样式</h2>
+        <span class="label">Default Label</span>
+        <span class="label secondary">Secondary Label</span>
+        <span class="label success">Success Label</span>
+        <span class="label info">Info Label</span>
+        <span class="label warning">Success Label</span>
+        <span class="label alert">Alert Label</span>
+    </div>
+    <div style="padding:20px;">
+        <h2>圆角标签</h2>
+        <span class="label">Default Label</span>
+        <span class="label radius">Radius Label</span>
+        <span class="label round">Round Label</span>
+        <span class="label success round">5</span>
+    </div>
+    <div style="padding:20px;">
+        <h2>标签大小</h2>
+        <h1>Example <span class="label" style="font-size:36px;">36px</span></h1>
+        <h2>Example <span class="label" style="font-size:30px;">30px</span></h2>
+        <h3>Example <span class="label" style="font-size:20px;">20px</span></h3>
+        <h4>Example <span class="label">Default</span></h4>
+    </div>
+    <div style="padding:20px;">
+        <h2>提醒框</h2>
+        <p>alert-box</p>
+        <div data-alert class="alert-box">
+            This is a default alert box.
+        </div>
+
+        <div data-alert class="alert-box secondary">
+            This is a secondary alert box.
+        </div>
+
+        <div data-alert class="alert-box success">
+            <strong>Success!</strong> This alert box indicates a successful or positive action.
+        </div>
+
+        <div data-alert class="alert-box info">
+            <strong>Info!</strong> This alert box indicates a neutral informative change or action.
+        </div>
+
+        <div data-alert class="alert-box warning">
+            <strong>Warning!</strong> This alert box indicates a warning that might need attention.
+        </div>
+
+        <div data-alert class="alert-box alert">
+            <strong>Alert!</strong> This alert box indicates a dangerous or potentially negative action.
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>圆角提醒框</h2>
+        <p>radius</p>
+        <div data-alert class="alert-box">
+            Default Alert box
+        </div>
+
+        <div data-alert class="alert-box radius">
+            Default Alert box with a radius.
+        </div>
+
+        <div data-alert class="alert-box secondary radius">
+            Secondy Alert box with a radius.
+        </div>
+
+        <div data-alert class="alert-box success radius">
+            <strong>Success!</strong> Alert box with a radius.
+        </div>
+        <p>round</p>
+        <div data-alert class="alert-box info round">
+            <strong>Info!</strong> Alert box that is rounded.
+        </div>
+
+        <div data-alert class="alert-box warning round">
+            <strong>Warning!</strong> Alert box that is rounded.
+        </div>
+
+        <div data-alert class="alert-box alert round">
+            <strong>Alert!</strong> Alert box that is rounded.
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>关闭提醒框</h2>
+        <div data-alert class="alert-box">
+            This is a default alert box.
+            <a href="#" class="close">&times;</a>
+        </div>
+
+        <div data-alert class="alert-box secondary">
+            This is a secondary alert box.
+            <a href="#" class="close">&times;</a>
+        </div>
+
+        <div data-alert class="alert-box success">
+            <strong>Success!</strong> This alert box indicates a successful or positive action.
+            <a href="#" class="close">&times;</a>
+        </div>
+
+        <div data-alert class="alert-box info">
+            <strong>Info!</strong> This alert box indicates a neutral informative change or action.
+            <a href="#" class="close">&times;</a>
+        </div>
+
+        <div data-alert class="alert-box warning">
+            <strong>Warning!</strong> This alert box indicates a warning that might need attention.
+            <a href="#" class="close">&times;</a>
+        </div>
+
+        <div data-alert class="alert-box alert">
+            <strong>Alert!</strong> This alert box indicates a dangerous or potentially negative action.
+            <a href="#" class="close">&times;</a>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>基本进度条</h2>
+        <p>progress,meter </p>
+        <div class="progress">
+            <span class="meter" style="width:70%"></span>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>进度条颜色</h2>
+        <div class="progress">
+            <span class="meter" style="width:10%">default</span>
+        </div>
+
+        <div class="progress secondary">
+            <span class="meter" style="width:30%">secondary</span>
+        </div>
+
+        <div class="progress success">
+            <span class="meter" style="width:50%">success</span>
+        </div>
+        <div class="progress alert">
+            <span class="meter" style="width:70%">alert</span>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>圆角进度条</h2>
+        <p>默认:</p>
+        <div class="progress">
+            <span class="meter" style="width:20%"></span>
+        </div>
+
+        <p>圆角:radius</p>
+        <div class="progress radius">
+            <span class="meter" style="width:40%"></span>
+        </div>
+
+        <p>圆形:round</p>
+        <div class="progress round">
+            <span class="meter" style="width:60%"></span>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>进度条尺寸</h2>
+        <div class="progress large-1">
+            <span class="meter" style="width:50%">large-1</span>
+        </div>
+
+        <div class="progress large-6">
+            <span class="meter" style="width:50%">large-6</span>
+        </div>
+
+        <div class="progress large-9">
+            <span class="meter" style="width:50%">large-9</span>
+        </div>
+
+        <div class="progress large-11">
+            <span class="meter" style="width:50%">large-11</span>
+        </div>
+
+        <!-- Default width, if you remove .large-12 it will produce the same result -->
+        <div class="progress large-12">
+            <span class="meter" style="width:50%">large-12</span>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>进度条标签</h2>
+        <div class="progress">
+            <span class="meter" style="position:relative;width:75%">
+      <span class="percentage">75%</span>
+            </span>
+        </div>
+
+        <div class="progress success">
+            <span class="meter" style="position:relative;width:50%">
+      <span class="percentage">50%</span>
+            </span>
+        </div>
+
+        <div class="progress alert">
+            <span class="meter" style="position:relative;width:25%">
+      <span class="percentage">25%</span>
+            </span>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>面板</h2>
+        <p>panel</p>
+        <div class="panel">
+            <h3>标题</h3>
+            <p>文本内容..</p>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>面板颜色修改</h2>
+        <div class="panel callout">
+            <h3>标题</h3>
+            <p>文本内容callout</p>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>圆角面板 Panel</h2>
+        <div class="panel radius">
+            <h3>标题</h3>
+            <p>文本内容radius</p>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>缩略图</h2>
+        <p>在 <code>&lt;a&gt;</code> 标签中添加 <code>.th</code> 类将图片设置为缩略图。 鼠标移动到上面会显示一个浅蓝色外框:</p>
+        <p><strong>注意:</strong> Foundation 中图片默认是响应式的。重置窗口大小可以查看效果。</p>
+        <a href="paris.jpg" target="_blank" class="th">
+            <img src="paris.jpg" alt="Paris" width="400" height="300">
+        </a>
+    </div>
+    <div style="padding:20px">
+        <h2>简洁的弹窗</h2>
+        <p>要创建一个弹窗可以在 <code> &lt;ul&gt;</code> 元素上添加 <code>.clearing-thumbs</code> 类及 <code>data-clearing</code> 属性。在 <code>&lt;ul&gt;</code> 内添加图片列表。</p>
+        <ul class="clearing-thumbs" data-clearing>
+            <li>
+                <a href="rock600x400.jpg"><img src="rock200x100.jpg" width="200" height="100"></a>
+            </li>
+            <li>
+                <a href="skies600x400.jpg"><img src="skies200x100.jpg" width="200" height="100"></a>
+            </li>
+            <li>
+                <a href="lights600x400.jpg"><img src="lights200x100.jpg" width="200" height="100"></a>
+            </li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>Lightbox Captions</h2>
+        <p>可以添加 <code>data-caption</code> 属性到每个图片来设置图片的描述。</p>
+        <ul class="clearing-thumbs" data-clearing>
+            <li>
+                <a href="rock600x400.jpg" class="th"><img data-caption="The Pulpit Rock" src="rock200x100.jpg" width="200" height="100"></a>
+            </li>
+            <li>
+                <a href="skies600x400.jpg" class="th"><img data-caption="Sunrise Skies" src="skies200x100.jpg" width="200" height="100"></a>
+            </li>
+            <li>
+                <a href="lights600x400.jpg" class="th"><img data-caption="Northern Lights" src="lights200x100.jpg" width="200" height="100"></a>
+            </li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>弹窗特点</h2>
+        <p>当你需要实现只显示一张缩略图时你可以在 <code> &lt;ul&gt;</code> 中使用 <code>.clearing-feature</code> 类并在<code>&lt;li&gt;</code> 中使用 <code>.clearing-featured-img</code> 类。</p>
+        <ul class="clearing-thumbs clearing-feature" data-clearing>
+            <li>
+                <a href="rock600x400.jpg" class="th"><img data-caption="The Pulpit Rock" src="rock200x100.jpg" width="200" height="100"></a>
+            </li>
+            <li>
+                <a href="skies600x400.jpg" class="th"><img data-caption="Sunrise Skies" src="skies200x100.jpg" width="200" height="100"></a>
+            </li>
+            <li class="clearing-featured-img">
+                <a href="lights600x400.jpg" class="th"><img data-caption="Northern Lights" src="lights200x100.jpg" width="200" height="100"></a>
+            </li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>下拉菜单按钮</h2>
+        <a href="#" data-dropdown="id01" class="button dropdown">Dropdown Button</a>
+        <ul id="id01" data-dropdown-content class="f-dropdown">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <!-- Tiny Dropdown: max-width is 200px -->
+        <a href="#" data-dropdown="id01" class="button dropdown">Tiny</a>
+        <ul id="id01" data-dropdown-content class="f-dropdown tiny">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+        <br>
+
+        <!-- Small Dropdown: max-width is 300px  -->
+        <a href="#" data-dropdown="id02" class="button dropdown">Small</a>
+        <ul id="id02" data-dropdown-content class="f-dropdown small">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+        <br>
+
+        <!-- Medium Dropdown: max-width is 500px  -->
+        <a href="#" data-dropdown="id03" class="button dropdown">Medium</a>
+        <ul id="id03" data-dropdown-content class="f-dropdown medium">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+        <br>
+
+        <!-- Large Dropdown: max-width is 800px  -->
+        <a href="#" data-dropdown="id04" class="button dropdown">Large</a>
+        <ul id="id04" data-dropdown-content class="f-dropdown large">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+        <br>
+
+        <!-- Mega Dropdown: 100% width -->
+        <a href="#" data-dropdown="id05" class="button dropdown">Mega</a>
+        <ul id="id05" data-dropdown-content class="f-dropdown mega">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+
+    </div>
+    <div style="padding:20px;">
+        <h2>下拉菜单内容项</h2>
+        <a href="#" data-dropdown="id11" class="button dropdown">没有内边距</a>
+        <ul id="id11" data-dropdown-content class="f-dropdown">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+
+        <a href="#" data-dropdown="id12" class="button dropdown">有内边距</a>
+        <ul id="id12" data-dropdown-content class="f-dropdown content">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>下拉菜单内容</h2>
+        <a href="#" data-dropdown="id01" class="button dropdown">下拉按钮</a>
+        <div id="id01" data-dropdown-content class="f-dropdown medium content">
+            <h4>Paris Title</h4>
+            <p>Some text.. some text..</p>
+            <img src="paris.jpg" alt="Paris" width="400" height="300">
+            <p>Paris, je t'aime.</p>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>下拉菜单方向</h2>
+        <a href="#" data-dropdown="id0001" data-options="align:right" class="button dropdown">右边</a>
+        <ul id="id0001" data-dropdown-content class="f-dropdown">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+
+        <a href="#" data-dropdown="id0002" data-options="align:top" class="button dropdown">顶部</a>
+        <ul id="id0002" data-dropdown-content class="f-dropdown">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+
+        <a href="#" data-dropdown="id0003" data-options="align:bottom" class="button dropdown">底部</a>
+        <ul id="id0003" data-dropdown-content class="f-dropdown">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+
+        <a href="#" data-dropdown="id0004" data-options="align:left" class="button dropdown">左边</a>
+        <ul id="id0004" data-dropdown-content class="f-dropdown">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>下拉菜单触发条件</h2>
+        <a href="#" data-dropdown="id001" data-options="is_hover:true" class="button dropdown">鼠标移动到我这</a>
+        <ul id="id001" data-dropdown-content class="f-dropdown">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>分割按钮</h2>
+        <button class="button split">Split Button <span data-dropdown="id101"></span></button>
+        <ul id="id101" data-dropdown-content class="f-dropdown">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>可折叠</h2>
+        <p>accordion</p>
+        <ul class="accordion" data-accordion>
+            <li class="accordion-navigation">
+                <a href="#demo">简单的可折叠实例</a>
+                <div id="demo" class="content">
+                    学的不仅是技术，更是梦想！！！
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>手风琴单开</h2>
+        <p>单开:multi_expand:false</p>
+        <ul class="accordion" data-accordion>
+            <li class="accordion-navigation">
+                <a href="#demo001">手风琴 1</a>
+                <div id="demo001" class="content active">
+                    Demo 1 - 菜鸟教程 -- 学的不仅是技术，更是梦想！！！
+                </div>
+            </li>
+            <li class="accordion-navigation">
+                <a href="#demo2001">手风琴 2</a>
+                <div id="demo2001" class="content">
+                    Demo 2 - 菜鸟教程 -- 学的不仅是技术，更是梦想！！！
+                </div>
+            </li>
+            <li class="accordion-navigation">
+                <a href="#demo3001">手风琴 3</a>
+                <div id="demo3001" class="content">
+                    Demo 3 - 菜鸟教程 -- 学的不仅是技术，更是梦想！！！
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>手风琴多开</h2>
+        <p>多开:multi_expand:true</p>
+        <ul class="accordion" data-accordion data-options="multi_expand:true;">
+            <li class="accordion-navigation">
+                <a href="#demo2001">手风琴实例 1</a>
+                <div id="demo2001" class="content">
+                    Demo 1 - 菜鸟教程 -- 学的不仅是技术，更是梦想！！！
+                </div>
+            </li>
+            <li class="accordion-navigation">
+                <a href="#demo22001">手风琴实例 2</a>
+                <div id="demo22001" class="content">
+                    Demo 2 - 菜鸟教程 -- 学的不仅是技术，更是梦想！！！
+                </div>
+            </li>
+            <li class="accordion-navigation">
+                <a href="#demo32001">手风琴实例 3</a>
+                <div id="demo32001" class="content">
+                    Demo 3 - 菜鸟教程 -- 学的不仅是技术，更是梦想！！！
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>圆圈标识符列表</h2>
+        <p>circle</p>
+        <ul class="circle">
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>方块标识符列表</h2>
+        <p>square</p>
+        <ul class="square">
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>无标识符列表</h2>
+        <p>no-bullet</p>
+        <ul class="no-bullet">
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>内联列表</h2>
+        <p>inline-list</p>
+        <ul class="inline-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+        </ul>
+
+    </div>
+    <div style="padding:20px;">
+        <h2>选项卡</h2>
+        <p>tabs</p>
+        <ul class="tabs" data-tab>
+            <li class="tab-title active"><a href="javascript:void(0)">Home</a></li>
+            <li class="tab-title"><a href="javascript:void(0)">Menu 1</a></li>
+            <li class="tab-title"><a href="javascript:void(0)">Menu 2</a></li>
+            <li class="tab-title"><a href="javascript:void(0)">Menu 3</a></li>
+        </ul>
+    </div>
+    <div style="padding:20px;height:320px;">
+        <h2>垂直选项卡</h2>
+        <ul class="tabs vertical" data-tab>
+            <li class="tab-title active"><a href="javascript:void(0)">Home</a></li>
+            <li class="tab-title"><a href="javascript:void(0)">Menu 1</a></li>
+            <li class="tab-title"><a href="javascript:void(0)">Menu 2</a></li>
+            <li class="tab-title"><a href="javascript:void(0)">Menu 3</a></li>
+        </ul>
+    </div>
+
+    <div style="padding:20px;">
+        <h2>切换选项卡</h2>
+
+        <ul class="tabs" data-tab="">
+            <li class="tab-title"><a href="#home111" aria-selected="false" tabindex="-1">主页</a></li>
+            <li class="tab-title"><a href="#menu1111" aria-selected="false" tabindex="-1">菜单 1</a></li>
+            <li class="tab-title active"><a href="#menu2111" aria-selected="true" tabindex="0">菜单 2</a></li>
+            <li class="tab-title"><a href="#menu3111" aria-selected="false" tabindex="-1">菜单 3</a></li>
+        </ul>
+        <div class="tabs-content">
+            <div class="content" id="home111" aria-hidden="true" tabindex="-1">
+                <h3>主页</h3>
+                <p>主页内容..</p>
+            </div>
+            <div class="content" id="menu1111" aria-hidden="true" tabindex="-1">
+                <h3>菜单 1</h3>
+                <p>一些文本内容 1</p>
+            </div>
+            <div class="content active" id="menu2111" aria-hidden="false">
+                <h3>菜单 2</h3>
+                <p>一些文本内容 2</p>
+            </div>
+            <div class="content" id="menu3111" aria-hidden="true" tabindex="-1">
+                <h3>菜单 3</h3>
+                <p>一些文本内容 3</p>
+            </div>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>分页</h2>
+        <p>.pagination 类提供了分页链接,设置当前页面可以使用 .current 类:</p>
+        <ul class="pagination">
+            <li class="current"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>分页 - 不可用状态</h2>
+        <p>如果要设置当前分页不可用可以使用 .unavailable 类:</p>
+        <ul class="pagination">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li class="unavailable"><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>分页方向符号</h2>
+        <p>使用 .arrow 类来创建方向符号：</p>
+        <ul class="pagination">
+            <li class="arrow"><a href="#">«</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li class="arrow"><a href="#">»</a></li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>分页居中</h2>
+        <p>分页居中可以 在 ul 外层添加 div 并使用 pagination-centered 类 :</p>
+        <div class="pagination-centered">
+            <ul class="pagination">
+                <li class="arrow"><a href="#">«</a></li>
+                <li class="current"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li class="arrow"><a href="#">»</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>面包屑导航</h2>
+        <p>.breadcrumb 类用于展示面包屑导航:</p>
+        <ul class="breadcrumbs">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Private</a></li>
+            <li class="unavailable"><a href="#">Pictures</a></li>
+            <li class="current">Vacation</li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>子导航</h2>
+        <ul class="sub-nav">
+            <dt>Filter:</dt>
+            <dd class="active"><a href="#">All</a></dd>
+            <dd><a href="#">Active</a></dd>
+            <dd><a href="#">Pending</a></dd>
+            <dd><a href="#">Suspended</a></dd>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>价格表</h2>
+        <ul class="pricing-table">
+            <li class="title">Basic</li>
+            <li class="price">$19.99</li>
+            <li class="description">Great for small business</li>
+            <li class="bullet-item">24/7 Support</li>
+            <li class="bullet-item">15GB Storage</li>
+            <li class="bullet-item">1GB Bandwidth</li>
+            <li class="cta-button"><a class="a button" href="#">Sign Up</a></li>
+        </ul>
+        <p>ul.pricing-table - 定义价格表 li.title - 定义产品标题 (黑色背景) li.price - 定义价格 (灰色背景字体大个项) li.description - 定义产品描述 (如果需要) li.bullet-item - 定义产品特点 li.ca-button - 按钮文本 (如 "Buy", "Join", "Sign Up", 等)</p>
+    </div>
+    <div class="row" style="padding:20px;">
+        <h2>网格中的价格表</h2>
+        <div class="medium-4 columns">
+            <ul class="pricing-table">
+                <li class="title">Basic</li>
+                <li class="price">$19.99</li>
+                <li class="description">Great for small business</li>
+                <li class="bullet-item">24/7 Support</li>
+                <li class="bullet-item">15GB Storage</li>
+                <li class="bullet-item">1GB Bandwidth</li>
+                <li class="cta-button"><a class="a button" href="#">Sign Up</a></li>
+            </ul>
+        </div>
+        <div class="medium-4 columns">
+            <ul class="pricing-table">
+                <li class="title">Pro</li>
+                <li class="price">$29.99</li>
+                <li class="description">For the Average Joe</li>
+                <li class="bullet-item">24/7 Support</li>
+                <li class="bullet-item">25GB Storage</li>
+                <li class="bullet-item">2GB Bandwidth</li>
+                <li class="cta-button"><a class="a button" href="#">Sign Up</a></li>
+            </ul>
+        </div>
+        <div class="medium-4 columns">
+            <ul class="pricing-table">
+                <li class="title">Premium</li>
+                <li class="price">$49.99</li>
+                <li class="description">When only the best is an option</li>
+                <li class="bullet-item">24/7 Support</li>
+                <li class="bullet-item">Unlimited Storage</li>
+                <li class="bullet-item">Unlimited Bandwidth</li>
+                <li class="cta-button"><a class="a button" href="#">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+    <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+            <li class="name">
+                <!-- 如果你不需要标题或图标可以删掉它 -->
+                <h1><a href="#">WebSiteName</a></h1>
+            </li>
+            <!-- 小屏幕上折叠按钮: 去掉 .menu-icon 类，可以去除图标。 
+      如果需要只显示图片，可以删除 "Menu" 文本 -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+            <ul class="left">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+        </section>
+    </nav>
+
+    <div style="padding:20px;">
+        <h3>基本头部工具条实例</h3>
+        <p>工具条是在页面头部的导航。</p>
+        <p><strong>注意:</strong> 在小屏幕上工具条会被一个按钮取代 (重置窗口，查看效果)。</p>
+        <p>在按钮被点击后导航项将显示。</p>
+    </div>
+    <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+            <li class="name">
+                <!-- 如果你不需要标题或图标可以删掉它 -->
+                <h1><a href="#">WebSiteName</a></h1>
+            </li>
+            <!-- 小屏幕上折叠按钮: 去掉 .menu-icon 类，可以去除图标。 
+      如果需要只显示图片，可以删除 "Menu" 文本 -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+            <ul class="right">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+        </section>
+    </nav>
+
+    <div style="padding:20px;">
+        <h3>右对齐工具条</h3>
+        <p> .right 类设置工具条按钮右对齐。</p>
+        <p><strong>注意:</strong> 在小屏幕上工具条会被一个按钮取代 (重置窗口，查看效果)。</p>
+        <p>在按钮被点击后导航项将显示。</p>
+    </div>
+    <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="#">WebSiteName</a></h1>
+            </li>
+            <!-- 小屏幕上折叠按钮: 去掉 .menu-icon 类，可以去除图标。 
+      如果需要只显示图片，可以删除 "Menu" 文本 -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+            <ul class="left">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </section>
+    </nav>
+
+    <div style="padding:20px;">
+        <h3>左右都有对齐</h3>
+        <p>该实例演示了工具条左右都有选项。</p>
+        <p><strong>注意:</strong> 在小屏幕上工具条会被一个按钮取代 (重置窗口，查看效果)。</p>
+        <p>在按钮被点击后导航项将显示。</p>
+    </div>
+    <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="#">WebSiteName</a></h1>
+            </li>
+            <!-- 小屏幕上折叠按钮: 去掉 .menu-icon 类，可以去除图标。 
+      如果需要只显示图片，可以删除 "Menu" 文本 -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+            <ul class="left">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Page 1</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Page 2</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Page 3</a></li>
+                <li class="divider"></li>
+            </ul>
+        </section>
+    </nav>
+
+    <div style="padding:20px;">
+        <h3>顶部导航栏分割线</h3>
+        <p>导航栏可以通过 .divider 类来添加分割线 (大屏幕上是垂直的线，小屏幕上是水平线)。</p>
+    </div>
+    <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="#">WebSiteName</a></h1>
+            </li>
+            <!-- 小屏幕上折叠按钮: 去掉 .menu-icon 类，可以去除图标。 
+      如果需要只显示图片，可以删除 "Menu" 文本 -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+            <ul class="left">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="has-dropdown">
+                    <a href="#">Dropdown</a>
+                    <ul class="dropdown">
+                        <li><a href="#">First link in dropdown</a></li>
+                        <li><a href="#">Second link in dropdown</a></li>
+                        <li class="active"><a href="#">Active link in dropdown</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </nav>
+
+    <div style="padding:20px;">
+        <h3>带有下拉菜单的工具栏</h3>
+        <p>该实例演示了带有下拉菜单的攻击栏。</p>
+    </div>
+    <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="#">WebSiteName</a></h1>
+            </li>
+            <!-- 小屏幕上折叠按钮: 去掉 .menu-icon 类，可以去除图标。 
+      如果需要只显示图片，可以删除 "Menu" 文本 -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+            <ul class="left">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="has-dropdown">
+                    <a href="#">Dropdown</a>
+                    <ul class="dropdown">
+                        <li><label>Fruit</label></li>
+                        <li><a href="#">Apple</a></li>
+                        <li><a href="#">Banana</a></li>
+                        <li><a href="#">Orange</a></li>
+                        <li class="divider"></li>
+                        <li><label>Vegetable</label></li>
+                        <li><a href="#">Kale</a></li>
+                        <li><a href="#">Spinach</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </nav>
+
+    <div style="padding:20px;">
+        <h3>下拉菜单标签(标题)</h3>
+        <p>使用 label 元素为下拉菜单设置标签(标题)。</p>
+    </div>
+    <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="#">WebSiteName</a></h1>
+            </li>
+            <!-- 小屏幕上折叠按钮: 去掉 .menu-icon 类，可以去除图标。 
+      如果需要只显示图片，可以删除 "Menu" 文本 -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+            <ul class="left">
+                <li class="has-dropdown">
+                    <a href="#">Dropdown</a>
+                    <ul class="dropdown">
+                        <li><label>Level 1</label></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">New dropdown</a>
+                            <ul class="dropdown">
+                                <li><label>Level 2</label></li>
+                                <li><a href="#">2nd level dropdown</a></li>
+                                <li><a href="#">2nd level dropdown</a></li>
+                                <li class="has-dropdown">
+                                    <a href="#">New dropdown</a>
+                                    <ul class="dropdown">
+                                        <li><label>Level 3</label></li>
+                                        <li><a href="#">3rd level dropdown</a></li>
+                                        <li><a href="#">3rd level dropdown</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </nav>
+
+    <div style="padding:20px;">
+        <h3>导航栏内嵌下拉菜单</h3>
+        <p>该实例演示了下拉菜单中再嵌入下拉菜单。</p>
+    </div>
+    <nav class="top-bar" data-topbar data-options="is_hover: false">
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="#">WebSiteName</a></h1>
+            </li>
+            <!-- 小屏幕上折叠按钮: 去掉 .menu-icon 类，可以去除图标。 
+      如果需要只显示图片，可以删除 "Menu" 文本 -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+            <ul class="left">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="has-dropdown">
+                    <a href="#">Dropdown</a>
+                    <ul class="dropdown">
+                        <li><a href="#">First link in dropdown</a></li>
+                        <li><a href="#">Second link in dropdown</a></li>
+                        <li class="active"><a href="#">Active link in dropdown</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </nav>
+
+    <div style="padding:20px;">
+        <h3>点击下拉菜单 With Clickable Dropdown</h3>
+        <p>默认情况下导航栏的下拉菜单在鼠标移动过去后显示，我们可以使用 <code>data-options="is_hover: false"</code> 属性来设置导航栏在鼠标在点击后显示。</p>
+    </div>
+    <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="#">WebSiteName</a></h1>
+            </li>
+            <!-- 小屏幕上折叠按钮: 去掉 .menu-icon 类，可以去除图标。 
+      如果需要只显示图片，可以删除 "Menu" 文本 -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+            <ul class="left">
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#" class="button">Button Link</a></li>
+            </ul>
+        </section>
+    </nav>
+
+    <div style="padding:20px;">
+        <h3>头部工具条按钮</h3>
+        <p>头部工具条按钮实例。</p>
+    </div>
+    <nav class="top-bar" data-topbar>
+        <section class="top-bar-section">
+            <ul class="left">
+                <li class="active"><a href="#"><i class="fi-home"></i> Home</a></li>
+                <li><a href="#"><i class="fi-torso"></i> Sign Up</a></li>
+                <li><a href="#"><i class="fi-magnifying-glass"></i> Search</a></li>
+            </ul>
+        </section>
+    </nav>
+
+    <div style="padding:20px;">
+        <h3>工具条图标</h3>
+        <p>工具条上显示图标实例。</p>
+    </div>
+    <div class="fixed">
+        <nav class="top-bar" data-topbar>
+            <ul class="title-area">
+                <li class="name">
+                    <h1><a href="#">WebSiteName</a></h1>
+                </li>
+                <!-- 小屏幕上折叠按钮: 去掉 .menu-icon 类，可以去除图标。 
+      如果需要只显示图片，可以删除 "Menu" 文本 -->
+                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+
+            <section class="top-bar-section">
+                <ul class="left">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </section>
+        </nav>
+    </div>
+
+    <h2>搞定头部导航栏实例</h2>
+    <p>导航栏可以在页面滚动时固定在页面顶部。</p><br>
+    <h1>滚动 iframe 中的页面查看效果。</h1>
+
+    <div style="padding:20px;">
+        <div>
+            <h1>导航栏绝对定位</h1>
+            <h3>滚动时固定导航栏。</h3>
+            <p>我们可以将导航栏放在 <code>&lt;div class="sticky"&gt;</code> 内来设置导航栏的绝对定位，当滚动条滚到到该区域时，该导航栏就像固定导航栏一样在顶部不动:</p>
+        </div>
+
+        <div class="sticky">
+            <nav class="top-bar" data-topbar>
+                <ul class="title-area">
+                    <li class="name">
+                        <h1><a href="#">WebSiteName</a></h1>
+                    </li>
+                    <!-- 小屏幕上折叠按钮: 去掉 .menu-icon 类，可以去除图标。 
+      如果需要只显示图片，可以删除 "Menu" 文本 -->
+                    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+                </ul>
+
+                <section class="top-bar-section">
+                    <ul class="left">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Page 1</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                    </ul>
+                </section>
+            </nav>
+        </div>
+        <h2>Some text to enable scrolling</h2>
+        <h2>Some text to enable scrolling</h2>
+        <h2>Some text to enable scrolling</h2>
+        <h2>Some text to enable scrolling</h2>
+        <h2>Some text to enable scrolling</h2>
+        <h2>Some text to enable scrolling</h2>
+        <h2>Some text to enable scrolling</h2>
+    </div>
+    <ul class="side-nav">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+    </ul>
+
+    <div style="padding:20px;">
+        <h3>侧栏导航</h3>
+        <p> .side-nav 类用于创建侧栏导航，宽度为父元素100%宽度。</p>
+    </div>
+    <div class="row">
+        <div class="medium-4 columns" style="background-color:#f1f1f1;">
+            <ul class="side-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Learn HTML</a></li>
+                <li><a href="#">Learn JavaScript</a></li>
+                <li><a href="#">Learn CSS</a></li>
+                <li><a href="#">Learn Foundation</a></li>
+                <li><a href="#">Learn HTML</a></li>
+                <li><a href="#">Learn JavaScript</a></li>
+                <li><a href="#">Learn CSS</a></li>
+                <li><a href="#">Learn Foundation</a></li>
+            </ul>
+        </div>
+        <div class="medium-8 columns">
+            <h1>侧栏导航</h1>
+            <p>该实例将侧栏导航房子网格设计中，背景为灰色。</p>
+            <p><strong>注意：</strong> 在小屏幕尺寸上，侧栏导航是垂直的，且宽度是延展到整个屏幕（100% width）。</p>
+            <p>重置浏览器查看效果。</p>
+            <p>行为动作可以通过 javascript 或媒体查询来修改它。</p>
+        </div>
+    </div>
+    <div class="off-canvas-wrap" data-offcanvas>
+        <div class="inner-wrap">
+            <nav class="tab-bar">
+                <section class="left-small">
+                    <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+                </section>
+
+                <section class="middle tab-bar-section">
+                    <h1 class="title">Off-canvas 实例</h1>
+                </section>
+            </nav>
+
+            <aside class="left-off-canvas-menu">
+                <ul class="off-canvas-list test">
+                    <li><label>Heading</label></li>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                    <li><a href="#">Link 8</a></li>
+                </ul>
+            </aside>
+
+            <section class="main-section">
+                <h3>菜鸟教程</h3>
+                <p>学的不仅是技术，更是梦想！！！</p>
+            </section>
+
+            <a class="exit-off-canvas"></a>
+
+        </div>
+    </div>
+
+    <div style="height:1500px;padding:20px;">
+        <h2>Magellan</h2>
+        <h4 class="subheader">麦哲伦导航就是一个导航索引，位置是固定的，会根据用户滚动当前展示的内容自动切换导航栏上的导航项:</h4>
+        <hr>
+
+        <div data-magellan-expedition="fixed">
+            <dl class="sub-nav">
+                <dd data-magellan-arrival="page1"><a href="#page1">Page 1</a></dd>
+                <dd data-magellan-arrival="page2"><a href="#page2">Page 2</a></dd>
+            </dl>
+        </div>
+        <hr>
+
+        <div style="height:200px;background-color:#1abc9c;color:white;">
+            <h3 data-magellan-destination="page1">页面 1</h3>
+            <a name="page1"></a>
+            <p>滚动屏幕，查看导航栏上的变化。</p>
+        </div>
+
+        <h3 data-magellan-destination="page2">页面 2</h3>
+        <a name="page2"></a>
+        <p>滚动屏幕，查看导航栏上的变化。并尝试向上滚动。</p>
+
+    </div>
+    <div style="padding:20px;">
+
+        <h2>表单</h2>
+        <form>
+            Input:
+            <input type="text" placeholder="Name"> Textarea:
+            <textarea rows="4" placeholder="Address"></textarea> Select:
+            <select>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+        </form>
+
+        <p> Foundation 会自动渲染表单样式。你可以移除样式文件 foundation.min.css 来查看原生的 HTML 表单。</p>
+
+    </div>
+    <div style="padding:20px;">
+        <h2>标签</h2>
+        <form>
+            <label for="name">Input
+    <input type="text" placeholder="Name" id="name">
+  </label>
+
+            <label for="address">Textarea
+    <textarea rows="4" placeholder="Address" id="address"></textarea>
+  </label>
+
+            <label for="num">Select
+    <select id="num">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+  </label>
+        </form>
+    </div>
+    <div style="padding:20px;">
+        <h2>fieldset</h2>
+        <form>
+            <fieldset>
+                <legend>fieldset Legend</legend>
+                <label>Name
+      <input type="text" placeholder="First Name..">
+    </label>
+                <label>Email
+      <input type="text" placeholder="Enter email..">
+    </label>
+            </fieldset>
+        </form>
+    </div>
+    <div style="padding:20px;">
+        <h2>错误状态</h2>
+        <form>
+            <label class="error">错误
+    <input type="text" placeholder="Name..">
+  </label>
+            <small class="error">输入错误</small>
+
+            <textarea rows="4" placeholder="Address"></textarea>
+            <small class="error">输入错误</small>
+        </form>
+    </div>
+    <div style="padding:20px;">
+        <form>
+            <div class="row">
+                <h2>使用网格设置输入框大小</h2>
+                <div class="large-10 medium-7 columns">
+                    <label>large-10 medium-7 (100% on small)
+      <input type="text" placeholder="Name">
+    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="small-5 columns">
+                    <label>small-5
+      <input type="text" placeholder="Name">
+    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="medium-3 columns">
+                    <label>medium-3 (100% on small)
+      <input type="text" placeholder="Name">
+    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="medium-4 columns">
+                    <label>medium-4 (100% on small, stacked)
+      <input type="text" placeholder="Name">
+    </label>
+                </div>
+
+                <div class="medium-4 columns">
+                    <label>medium-4 (100% on small, stacked)
+      <input type="text" placeholder="Name">
+    </label>
+                </div>
+
+                <div class="medium-4 columns">
+                    <label>medium-4 (100% on small, stacked)
+      <input type="text" placeholder="Name">
+    </label>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div style="padding:20px;">
+        <form>
+            <div class="row">
+                <h2>三个相等宽度的输入框</h2>
+                <div class="medium-4 columns">
+                    <label>medium-4 (100% on small, stacked)
+        <input type="text" placeholder="Name">
+      </label>
+                </div>
+
+                <div class="medium-4 columns">
+                    <label>medium-4 (100% on small, stacked)
+        <input type="text" placeholder="Name">
+      </label>
+                </div>
+
+                <div class="medium-4 columns">
+                    <label>medium-4 (100% on small, stacked)
+        <input type="text" placeholder="Name">
+      </label>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div style="padding:20px;">
+        <form>
+            <div class="row">
+                <h2>内联标签 Label</h2>
+                <p><strong>提示:</strong> 如果你需要标签显示在左边，可以移除 .right 类。</p>
+                <div class="small-8">
+                    <div class="row">
+                        <div class="small-3 columns">
+                            <label for="name" class="inline right">Name</label>
+                        </div>
+                        <div class="small-9 columns">
+                            <input type="text" id="name" placeholder="First Name..">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div style="padding:20px;">
+        <form>
+            <div class="row">
+                <h2>前置后置标签</h2>
+                <div class="large-6 columns">
+                    <div class="row collapse prefix-radius">
+                        <div class="small-3 columns">
+                            <span class="prefix">前置</span>
+                        </div>
+                        <div class="small-9 columns">
+                            <input type="text" placeholder="Value">
+                        </div>
+                    </div>
+                </div>
+                <div class="large-6 columns">
+                    <div class="row collapse postfix-radius">
+                        <div class="small-9 columns">
+                            <input type="text" placeholder="Value">
+                        </div>
+                        <div class="small-3 columns">
+                            <span class="postfix">后置</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div style="padding:20px;">
+        <form>
+            <div class="row">
+                <h2>前置和后置标签</h2>
+                <p>圆角前置和后置标签:</p>
+                <div class="large-6 columns">
+                    <div class="row collapse prefix-radius">
+                        <div class="small-3 columns">
+                            <span class="prefix">Prefix</span>
+                        </div>
+                        <div class="small-9 columns">
+                            <input type="text" placeholder="Value">
+                        </div>
+                    </div>
+                </div>
+                <div class="large-6 columns">
+                    <div class="row collapse postfix-radius">
+                        <div class="small-9 columns">
+                            <input type="text" placeholder="Value">
+                        </div>
+                        <div class="small-3 columns">
+                            <span class="postfix">Postfix</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <p>圆形前置和后置标签按钮:</p>
+                <div class="large-6 columns">
+                    <div class="row collapse prefix-round">
+                        <div class="small-3 columns">
+                            <a href="#" class="button prefix">Go</a>
+                        </div>
+                        <div class="small-9 columns">
+                            <input type="text" placeholder="Value">
+                        </div>
+                    </div>
+                </div>
+                <div class="large-6 columns">
+                    <div class="row collapse postfix-round">
+                        <div class="small-9 columns">
+                            <input type="text" placeholder="Value">
+                        </div>
+                        <div class="small-3 columns">
+                            <a href="#" class="button postfix">Go</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div style="padding:20px;">
+        <h2>开关</h2>
+        <p>可以在 div 中添加 class="switch" 类，并添加 input checkbox 和 label 元素来创建开关:</p>
+        <form>
+            <div class="switch">
+                <input id="mySwitch" type="checkbox">
+                <label for="mySwitch"></label>
+            </div>
+        </form>
+    </div>
+    <div style="padding:20px;">
+        <h2>开关大小</h2>
+        <p>使用 <code>.large</code>, <code>.small</code> 或 <code>.tiny</code> 类来设置开关的大小:</p>
+        <span>Large</span>
+        <div class="switch large">
+            <input id="mySwitch1" type="checkbox">
+            <label for="mySwitch1"></label>
+        </div>
+
+        <span>Default</span>
+        <div class="switch">
+            <input id="mySwitch2" type="checkbox">
+            <label for="mySwitch2"></label>
+        </div>
+
+        <span>Small</span>
+        <div class="switch small">
+            <input id="mySwitch3" type="checkbox">
+            <label for="mySwitch3"></label>
+        </div>
+
+        <span>Tiny</span>
+        <div class="switch tiny">
+            <input id="mySwitch4" type="checkbox">
+            <label for="mySwitch4"></label>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>圆角开关</h2>
+        <p>使用 <code>.radius</code> 和 <code>.round</code> 类来设置圆角开关:</p>
+        <span>默认</span>
+        <div class="switch">
+            <input id="mySwitch11" type="checkbox">
+            <label for="mySwitch11"></label>
+        </div>
+
+        <span>圆角</span>
+        <div class="switch radius">
+            <input id="mySwitch21" type="checkbox">
+            <label for="mySwitch21"></label>
+        </div>
+
+        <span>圆形</span>
+        <div class="switch round">
+            <input id="mySwitch31" type="checkbox">
+            <label for="mySwitch31"></label>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>开关组</h2>
+        <p>可以通过设置单选按钮(radio)来设置单个选项。<strong>注意:</strong> 注意各个选项的 <code>name</code> 属性必须一致 (实例中为 "myGroup" )。</p>
+        <form>
+            <div class="switch">
+                <input id="mySwitch201" type="radio" name="myGroup">
+                <label for="mySwitch201"></label>
+            </div>
+
+            <div class="switch">
+                <input id="mySwitch202" type="radio" checked name="myGroup">
+                <label for="mySwitch202"></label>
+            </div>
+
+            <div class="switch">
+                <input id="mySwitch203" type="radio" name="myGroup">
+                <label for="mySwitch203"></label>
+            </div>
+        </form>
+    </div>
+    <div style="padding:20px;">
+        <h2>区间滑块</h2>
+        <p> .range-slider-handle 类创建一个滑块实体（蓝色矩形），.range-slider-active-segment 在滑块后添加灰色横条：</p>
+        <div class="range-slider" data-slider>
+            <span class="range-slider-handle"></span>
+            <span class="range-slider-active-segment"></span>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>圆角 & 禁用滑块</h2>
+        <p>使用 <code>.radius</code> 和 <code>.round</code> 类来添加圆角滑块。使用 <code>.disabled</code> 类来禁用滑块：</p>
+
+        <span>默认:</span>
+        <div class="range-slider" data-slider>
+            <span class="range-slider-handle"></span>
+            <span class="range-slider-active-segment"></span>
+        </div>
+
+        <span>圆角:</span>
+        <div class="range-slider radius" data-slider>
+            <span class="range-slider-handle"></span>
+            <span class="range-slider-active-segment"></span>
+        </div>
+
+        <span>圆形:</span>
+        <div class="range-slider round" data-slider>
+            <span class="range-slider-handle"></span>
+            <span class="range-slider-active-segment"></span>
+        </div>
+
+        <span>禁用:</span>
+        <div class="range-slider disabled" data-slider>
+            <span class="range-slider-handle"></span>
+            <span class="range-slider-active-segment"></span>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>垂直滑块</h2>
+        <p>使用 <code>.vertical-range</code> 类和 <code>data-options="vertical: true;"</code> 来创建垂直滑块:</p>
+        <div class="range-slider vertical-range" data-slider data-options="vertical: true;">
+            <span class="range-slider-handle"></span>
+            <span class="range-slider-active-segment"></span>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>默认滑块值</h2>
+        <p>默认情况下，滑块放在横条的中间 (数值为 "50")。可以通过添加 <code>data-options="initial: <em>num</em>"</code> 属性来修改默认值:</p>
+        <div class="range-slider" data-slider data-options="initial: 80;">
+            <span class="range-slider-handle"></span>
+            <span class="range-slider-active-segment"></span>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>显示滑块值</h2>
+        <p>如果我们需要在滑块拖动时实时显示值，可以通过在 <code> &lt;div&gt;</code> 中添加 <code>data-options="display_selector:#<em>id</em>"</code> 属性且元素 id 值与滑块的 id 匹配，如下实例：</p>
+        <span id="mySlider6"></span>
+        <div class="range-slider" data-slider data-options="display_selector: #mySlider6;">
+            <span class="range-slider-handle"></span>
+            <span class="range-slider-active-segment"></span>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>组合数据选项</h2>
+        <p>以下实例使用了 <code>display_selector</code> 和 <code>initial</code> 数据选项:</p>
+        <span id="mySlider7"></span>
+        <div class="range-slider" data-slider data-options="display_selector: #mySlider7; initial:20;">
+            <span class="range-slider-handle"></span>
+            <span class="range-slider-active-segment"></span>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>步长</h2>
+        <p>默认情况下，滑块滑动的增加减少的数量为 "1"。可以通过添加 <code>data-options="step: <em>num</em>;"</code> 属性来修改长值。实例中设置为 25:</p>
+
+        <span id="mySlider8"></span>
+        <div class="range-slider" data-slider data-options="display_selector: #mySlider8; step: 25;">
+            <span class="range-slider-handle"></span>
+            <span class="range-slider-active-segment"></span>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>自定义区间</h2>
+        <p>默认情况下，区间值在 "0" 到 "100"。可以通过添加 data-options <code>start</code> 和 <code>end</code> 来设置区间值。以下实例设置区间值为 "1" 到 "20":</p>
+
+        <span id="mySlider9"></span>
+        <div class="range-slider" data-slider data-options="display_selector: #mySlider9; start: 1; end: 20;">
+            <span class="range-slider-handle"></span>
+            <span class="range-slider-active-segment"></span>
+        </div>
+    </div>
+    <div class="row">
+        <h2>使用网格</h2>
+        <p>以下使用为在网格中使用滑块：</p>
+        <div class="small-10 columns">
+            <div class="range-slider" data-slider data-options="display_selector: #mySlider10;">
+                <span class="range-slider-handle"></span>
+                <span class="range-slider-active-segment"></span>
+            </div>
+        </div>
+        <div class="small-2 columns">
+            <span id="mySlider10" style="display:block;margin-top:14px;"></span>
+        </div>
+    </div>
+    <div class="row">
+        <h2>使用 Input</h2>
+        <p>以下实例使用 <code>&lt;input&gt;</code> 取代 <code>&lt;span&gt;</code> 来显示滑块的值:</p>
+        <div class="small-10 columns">
+            <div class="range-slider" data-slider data-options="display_selector: #mySlider11; initial: 72;">
+                <span class="range-slider-handle"></span>
+                <span class="range-slider-active-segment"></span>
+            </div>
+        </div>
+        <div class="small-2 columns">
+            <input type="number" id="mySlider11" style="margin-top:7px;" value="72">
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>提示框</h2>
+        <span data-tooltip title="哈哈，go">鼠标移到我这!</span>
+        <a href="#" data-tooltip class="button" title="别逗了，快走开！">鼠标移到我这!</a>
+    </div>
+    <div style="padding:20px;">
+        <h2>提示框</h2>
+        <p>默认情况下，提示框会出现在元素的底部。</p>
+        <p>可以使用 <code>.tip-top</code>, <code>.tip-left</code>, <code>.tip-right</code> or <code>.tip-bottom</code> (默认) 来设置提示框的位置。</p>
+        <p><strong>注意:</strong> 在小尺寸的屏幕上，提示框的宽带是 100%。</p>
+        <span data-tooltip class="has-tip tip-top" title="菜鸟教程!">顶部</span>
+        <span data-tooltip class="has-tip tip-bottom" title="菜鸟教程!">底部</span>
+        <span data-tooltip class="has-tip tip-left" title="www.runoob.com">左边</span>
+        <span data-tooltip class="has-tip tip-right" title="www.runoob.com">右边</span>
+    </div>
+    <div style="padding:20px;">
+        <h2>圆角提示框</h2>
+        <p> <code>.radius</code> 和 <code>.round</code> 类用于设置圆角提示框：</p>
+        <span data-tooltip class="has-tip" title="菜鸟教程!">默认</span>
+        <span data-tooltip class="has-tip radius" title="菜鸟教程!">圆角</span>
+        <span data-tooltip class="has-tip round" title="菜鸟教程!">圆形</span>
+    </div>
+    <div style="padding:20px;">
+        <h2>模态框</h2>
+        <p>模态框是一个显示在页面头部的弹窗。</p>
+        <button type="button" class="button" data-reveal-id="myModal">点我打开模态框</button>
+
+        <div id="myModal" class="reveal-modal" data-reveal>
+            <h2>Heading in Modal.</h2>
+            <p>Some text in the modal.</p>
+            <p>Some text in the modal.</p>
+            <a class="close-reveal-modal">&times;</a>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>模态框大小</h2>
+        <p>使用以下类来修改模态框大小:</p>
+        <ul>
+            <li><code>.tiny</code>: 设置宽度为 30%</li>
+            <li><code>.small</code>: 设置宽度为 40%</li>
+            <li><code>.medium</code>: 设置宽度为 60%</li>
+            <li><code>.large</code>: 设置宽度为 70%</li>
+            <li><code>.xlarge</code>: 设置宽度为 95%</li>
+            <li><code>.full</code>: 设置宽度喝高度为 100%</li>
+        </ul>
+
+        <button type="button" class="button" data-reveal-id="myModal1">打开小个模态框</button>
+
+        <div id="myModal1" class="reveal-modal tiny" data-reveal>
+            <h2>小个模态框</h2>
+            <p>这是一个小个模态框。尝试使用不同的类来修改模态框大小。</p>
+            <a class="close-reveal-modal">&times;</a>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>内嵌模态框</h2>
+        <!-- 触发模态框 -->
+        <button type="button" class="button" data-reveal-id="myModal">点击打开模态框</button>
+
+        <!-- 第一个模态框 -->
+        <div id="myModal" class="reveal-modal" data-reveal>
+            <h2>第一个模态框</h2>
+            <p>点击以下按钮会打开一个新的模态框。如果打开新的模态框，那么第一个模态框就会被关闭。</p>
+            <p><a href="#" data-reveal-id="secondModal" class="button success">打开第二个模态框</a></p>
+            <a class="close-reveal-modal">&times;</a>
+        </div>
+
+        <!-- 第二个模态框 -->
+        <div id="secondModal" class="reveal-modal" data-reveal>
+            <h2>第二个模态框</h2>
+            <p>第二个模态框，第一个模态框已关闭。</p>
+            <p>Foundation 让新的模态框取代了第一个模态框。</p>
+            <a class="close-reveal-modal">&times;</a>
+        </div>
+    </div>
+
+    <h2>Joyride 实例</h2>
+    <p> joyride 在页面载入后生效。</p>
+
+    <h3 id="first">第一个停止位置!</h3><br>
+    <h3 id="second">第二个停止位置!</h3>
+
+    <ol class="joyride-list" data-joyride>
+        <li data-id="first">
+            <p>这是一个 Joyride。你可以点击 "x" 按钮关闭它。</p>
+            <p>注意以下按钮，你带你倒下一个功能导航。</p>
+        </li>
+        <li data-id="second">
+            <h4>第二个停止位置 Stop</h4>
+            <p>你可以在这使用任何 HTML 代码</p>
+        </li>
+        <li data-button="End">
+            <h4>结束位置</h4>
+            <p>结束位置，你可以从头开始，或者关闭它。</p>
+        </li>
+    </ol>
+    <div class="row" data-equalizer>
+        <h2>Foundation 均衡器</h2>
+        <p>相等高度容器:</p>
+        <div class="medium-4 columns panel" data-equalizer-watch>
+            <p>菜鸟教程 -- 学的不仅是技术，更是梦想！！！</p>
+            <p>菜鸟教程 -- 学的不仅是技术，更是梦想！！！</p>
+            <p><strong>我是最高的元素。其他元素使用我的搞定。</strong></p>
+        </div>
+        <div class="medium-4 columns panel" data-equalizer-watch>
+            <p>菜鸟教程 -- 学的不仅是技术，更是梦想！！！</p>
+            <p>菜鸟教程 -- 学的不仅是技术，更是梦想！！！</p>
+        </div>
+        <div class="medium-4 columns panel" data-equalizer-watch>
+            <p>菜鸟教程 -- 学的不仅是技术，更是梦想！！！</p>
+        </div>
+    </div>
+    <div class="row" data-equalizer="first">
+        <h2>内嵌均衡器</h2>
+        <p>一个均衡容器内嵌入另一个均衡容器:</p>
+        <div class="medium-4 columns">
+            <div class="panel" data-equalizer-watch="first">
+                <h3>面板</h3>
+                <div class="row" data-equalizer="second">
+                    <div class="panel" data-equalizer-watch="second">
+                        <h3>内嵌面板</h3>
+                        p>菜鸟教程 -- 学的不仅是技术，更是梦想！！！</p>
+                    </div>
+                    <div class="panel" data-equalizer-watch="second">
+                        <h3>内嵌面板</h3>
+                        <p>菜鸟教程 -- 学的不仅是技术，更是梦想！！！</p>
+                    </div>
+                    <div class="panel" data-equalizer-watch="second">
+                        <h3>内嵌面板</h3>
+                        <p>菜鸟教程 -- 学的不仅是技术，更是梦想！！！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="medium-4 columns">
+            <div class="panel" data-equalizer-watch="first">
+                <h3>面板</h3>
+                <p>菜鸟教程 -- 学的不仅是技术，更是梦想！！！</p>
+                <p>菜鸟教程 -- 学的不仅是技术，更是梦想！！！</p>
+            </div>
+        </div>
+        <div class="medium-4 columns">
+            <div class="panel" data-equalizer-watch="first">
+                <h3>面板</h3>
+                <p>菜鸟教程 -- 学的不仅是技术，更是梦想！！！</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h2>Foundation 网格</h2>
+        <p>重置窗口大小查看效果</p>
+        <div class="small-12 columns" style="background-color:yellow;">.small-12</div>
+    </div>
+    <div class="row">
+        <div class="small-8 columns" style="background-color:beige;">.small-8</div>
+        <div class="small-4 columns" style="background-color:gray;">.small-4</div>
+    </div>
+    <div class="row">
+        <div class="small-8 large-9 columns" style="background-color:pink;">.small-8 .large-9</div>
+        <div class="small-4 large-3 columns" style="background-color:orange;">.small-4 .large-3</div>
+    </div>
+    <h2>Foundation 网格</h2>
+    <p>默认情况下，网格最大(<code>.row</code>) 宽度为 62.5rem。在宽屏上，当宽度大于 62.5rem, 列不会跨越页面的宽度， 即使宽度设定为 100%。但你可以通过 CSS 重新设置 max-width:</p>
+    <hr>
+
+    <div class="row">
+        <p>基本行 (max-width:62.5rem):</p>
+        <div class="small-6 columns" style="background-color:yellow;">.small-6</div>
+        <div class="small-6 columns" style="background-color:pink;">.small-6</div>
+    </div>
+    <br>
+
+    <div class="row example">
+        <p>行的max-width为 100% :</p>
+        <div class="small-6 columns" style="background-color:yellow;">.small-6</div>
+        <div class="small-6 columns" style="background-color:pink;">.small-6</div>
+    </div>
+    <h2>Foundation 网格</h2>
+    <p>外层容器使用类 .row，并指定背景颜色跨越整个页面：</p>
+
+    <div class="row" style="background-color:tomato;padding:25px;">
+        <p>Default Row with a tomato color and padding:</p>
+        <div class="small-6 columns" style="background-color:yellow;">.small-6</div>
+        <div class="small-6 columns" style="background-color:pink;">.small-6</div>
+    </div>
+    <br>
+
+    <div class="container" style="background-color:coral;padding:25px;">
+        <div class="row">
+            <p>Row with container:</p>
+            <div class="small-6 columns" style="background-color:yellow;">.small-6</div>
+            <div class="small-6 columns" style="background-color:pink;">.small-6</div>
+        </div>
+    </div>
+    <div class="row">
+        <h2>Foundation 网格</h2>
+        <p>两列网格堆叠实例。</p>
+        <p>重置浏览器窗口大小查看效果。</p>
+        <div class="medium-6 columns" style="background-color:yellow;">菜鸟教程</div>
+        <div class="medium-6 columns" style="background-color:pink;">菜鸟教程</div>
+    </div>
+    <br>
+    <div class="row">
+        <h2>Foundation 网格</h2>
+        <p>25%/75% 比例。</p>
+        <p>重置浏览器窗口大小查看效果。</p>
+        <div class="small-3 columns" style="background-color:yellow;">
+            <p>菜鸟教程</p>
+        </div>
+        <div class="small-9 columns" style="background-color:pink;">
+            <p>菜鸟教程</p>
+        </div>
+    </div>
+    <div class="row">
+        <h2>Foundation 网格</h2>
+        <p>33.3%/66.6% 比例。</p>
+        <p>重置浏览器窗口大小查看效果。</p>
+        <div class="small-4 columns" style="background-color:yellow;">
+            <p>菜鸟教程</p>
+        </div>
+        <div class="small-8 columns" style="background-color:pink;">
+            <p>菜鸟教程</p>
+        </div>
+    </div>
+    <div class="row">
+        <h2>Foundation 网格</h2>
+        <p>中型或大型设备上是 50%/50% 比例 ，小型设备上比例是 25%/75%。</p>
+        <p>Resize the browser window to see the effect.</p>
+        <div class="small-3 medium-6 columns" style="background-color:yellow;">
+            <p>菜鸟教程</p>
+        </div>
+        <div class="small-9 medium-6 columns" style="background-color:pink;">
+            <p>菜鸟教程</p>
+        </div>
+    </div>
+    <div class="row">
+        <h2>Foundation 网格</h2>
+        <p>中型或大型设备上是 50%/50% 比例 ，小型设备上是水平堆叠 (100%).</p>
+        <p>重置浏览器窗口大小查看效果。</p>
+        <div class="medium-6 columns" style="background-color:yellow;">
+            <p>菜鸟教程</p>
+        </div>
+        <div class="medium-6 columns" style="background-color:pink;">
+            <p>菜鸟教程</p>
+        </div>
+    </div>
+    <div class="row">
+        <h2>Foundation 网格</h2>
+        <p>大型设备上的比例为 33%/66%， 中型设备比例为 50%/50% ，小型设备比例为 25%/75% 。</p>
+        <p>重置浏览器窗口大小查看效果。</p>
+        <div class="small-3 medium-6 large-4 columns" style="background-color:yellow;">
+            <p>菜鸟教程</p>
+        </div>
+        <div class="small-9 medium-6 large-8 columns" style="background-color:pink;">
+            <p>菜鸟教程</p>
+        </div>
+    </div>
+    <div class="row">
+        <h2>Foundation 网格</h2>
+        <p>大型设备上的比例为 50%/50%。小型和中型设备会水平堆叠(100%)。</p>
+        <p>重置浏览器窗口大小查看效果。</p>
+        <div class="large-6 columns" style="background-color:yellow;">
+            <p>菜鸟教程</p>
+        </div>
+        <div class="large-6 columns" style="background-color:pink;">
+            <p>菜鸟教程</p>
+        </div>
+    </div>
+    <div style="padding:20px;">
+        <h2>Foundation 块状网格</h2>
+        <p>图片均分屏幕宽度:</p>
+        <ul class="small-block-grid-3">
+            <li><img src="newyork.jpg" alt="New York" width="400" height="300"></li>
+            <li><img src="paris.jpg" alt="Paris" width="400" height="300"></li>
+            <li><img src="sanfran.jpg" alt="San Francisco" width="400" height="300"></li>
+        </ul>
+    </div>
+    <div style="padding:20px;">
+        <h2>Foundation 块状网格</h2>
+        <p>均分段落:</p>
+        <ul class="small-block-grid-3">
+            <li>
+                <p>Just a Simple Example Text...</p>
+            </li>
+            <li>
+                <p>Just a Simple Example Text...</p>
+            </li>
+            <li>
+                <p>Just a Simple Example Text...</p>
+            </li>
+        </ul>
+    </div>
+    <div class="row">
+        <h2>网格 - 三个均等列</h2>
+        <p>该实例演示了如何创建三个均等列 (33.3%/33.3%/33.3%) ，在中型和大型设备上显示三个列，在小型设备上自动堆叠。</p>
+        <p>重置浏览器窗口大小查看效果。</p>
+        <div class="medium-4 columns" style="background-color:yellow;">
+            <p>.medium-4</p>
+        </div>
+        <div class="medium-4 columns" style="background-color:pink;">
+            <p>.medium-4</p>
+        </div>
+        <div class="medium-4 columns" style="background-color:yellow;">
+            <p>.medium-4</p>
+        </div>
+    </div>
+    <div class="row">
+        <h2>网格 - 三个不均等列</h2>
+        <p>该实例演示了如何创建三个不均等列 (25%/50%/25%)，在中型和大型设备上显示三个列，在小型设备上自动堆叠。</p>
+        <p>重置浏览器窗口大小查看效果。</p>
+        <div class="medium-3 columns" style="background-color:yellow;">
+            <p>.medium-3</p>
+        </div>
+        <div class="medium-6 columns" style="background-color:pink;">
+            <p>.medium-6</p>
+        </div>
+        <div class="medium-3 columns" style="background-color:yellow;">
+            <p>.medium-3</p>
+        </div>
+    </div>
+    <div class="row">
+        <h2>网格 - 两个均等列</h2>
+        <p>该实例演示了如何创建两个均等列 (50%/50%)，在小型、中型和大型设备上列的比例始终为 50%/50%。</p>
+        <p>重置浏览器窗口大小查看效果。</p>
+        <div class="small-6 columns" style="background-color:yellow;">
+            <p>.small-6</p>
+        </div>
+        <div class="small-6 columns" style="background-color:pink;">
+            <p>.small-6</p>
+        </div>
+    </div>
+    <div class="row">
+        <h2>网格 - 两个不均等列</h2>
+        <p>该实例演示了如何创建两个不均等列 (33.3%/66.6%)，在小型、中型和大型设备上列的比例始终为 33.3%/66.6%。</p>
+        <p>重置浏览器窗口大小查看效果。</p>
+        <div class="small-8 columns" style="background-color:yellow;">
+            <p>.small-8</p>
+        </div>
+        <div class="small-4 columns" style="background-color:pink;">
+            <p>.small-4</p>
+        </div>
+    </div>
+    <div class="row">
+        <h2>网格 - Push 和 Pull</h2>
+        <p>通过使用 <code>.small|medium|large-push-*</code> 和 <code>.small|medium|large-pull-*</code> 类来修改列的顺序:</p>
+        <div class="small-8 columns" style="background-color:yellow;">
+            <p>.small-8</p>
+        </div>
+        <div class="small-4 columns" style="background-color:pink;">
+            <p>.small-4</p>
+        </div>
+
+        <p>Switched:</p>
+        <div class="small-4 small-8-push columns" style="background-color:yellow;">
+            <p>.small-4 .small-8-push</p>
+        </div>
+        <div class="small-8 small-4-pull columns" style="background-color:pink;">
+            <p>.small-8 .small-4-pull</p>
+        </div>
+    </div>
+    <div class="row">
+        <h2>网格 - 嵌套列</h2>
+        <p>列中插入列:</p>
+        <div class="small-8 columns" style="background-color:yellow;">.small-8
+            <div class="row">
+                <div class="small-8 columns" style="background-color:lightcyan;">.small-8 Nested
+                    <div class="row">
+                        <div class="small-8 columns" style="background-color:lightblue;">.small-8 Nested Again</div>
+                        <div class="small-4 columns" style="background-color:lightgreen;">.small-4</div>
+                    </div>
+                </div>
+                <div class="small-4 columns" style="background-color:lightgray;">.small-4</div>
+            </div>
+        </div>
+        <div class="small-4 columns" style="background-color:pink;">.small-4</div>
+    </div>
+    <div class="row">
+        <h2>混合：手机、桌面设备</h2>
+        <p>重置浏览器窗口大小查看效果。</p>
+        <div class="small-6 large-8 columns" style="background-color:yellow;">.small-6 .large-8</div>
+        <div class="small-6 large-4 columns" style="background-color:pink;">.small-6 .large-4</div>
+    </div>
+    <div class="row">
+        <div class="small-2 large-4 columns" style="background-color:lightblue;">.small-2 .large-2</div>
+        <div class="small-4 large-4 columns" style="background-color:yellow;">.small-4 .large-2</div>
+        <div class="small-6 large-4 columns" style="background-color:lightgreen;">.small-6 .large-2</div>
+    </div>
+    <div class="row">
+        <div class="small-3 large-5 columns" style="background-color:lightcyan;">.small-3 .large-5</div>
+        <div class="small-9 large-7 columns" style="background-color:lightgray;">.small-9 .large-7</div>
+    </div>
+    <div class="row">
+        <h2>混合：手机、平板和桌面设备</h2>
+        <p>重置浏览器窗口大小查看效果。</p>
+        <div class="medium-6 large-8 columns" style="background-color:red;">.medium-6 .large-8</div>
+        <div class="medium-6 large-4 columns" style="background-color:yellow;">.medium-6 .large-4</div>
+    </div>
+    <div class="row">
+        <div class="small-4 medium-3 large-7 columns" style="background-color:pink;">.small-4 .medium-3 .large-7</div>
+        <div class="small-4 medium-6 large-3 columns" style="background-color:lightgreen;">.small-4 .medium-6 .large-3</div>
+        <div class="small-4 medium-3 large-2 columns" style="background-color:orange;">.small-4 .medium-3 .large-2</div>
+    </div>
+    <div class="row">
+        <h2>网格 - 居中列</h2>
+        <p>列居中可以使用 <code>.small-centered</code> 类。中型和大型设备可以继承小型设备的居中，但你需要在大型设备上设置居中类<code>.large-centered</code> 。</p>
+        <p>重置浏览器窗口大小查看效果。</p>
+        <div class="small-4 small-centered columns" style="background-color:yellow;">small-4 small-centered</div>
+    </div>
+    <div class="row">
+        <div class="small-6 small-centered columns" style="background-color:pink;">small-6 small-centered</div>
+    </div>
+    <div class="row">
+        <div class="small-6 large-centered columns" style="background-color:lightgreen;">small-6 large-centered</div>
+    </div>
+    <div class="row">
+        <div class="small-8 small-centered large-uncentered columns" style="background-color:yellow;">small-8 small-centered large-uncentered</div>
+    </div>
+    <div class="row">
+        <div class="small-10 small-centered columns" style="background-color:pink;">small-10 small-centered</div>
+    </div>
+    <div class="row">
+        <h2>网格 - 偏移量</h2>
+        <p>可以使用 <code>.large-offset-*</code> (或 <code>.small-offset-*</code>) 类设置列向右移。 左侧外边距的列数量使用 * 号控制:</p>
+        <div class="large-1 columns" style="background-color:yellow;">1</div>
+        <div class="large-11 columns" style="background-color:pink;">11</div>
+    </div>
+    <div class="row">
+        <div class="large-1 columns" style="background-color:yellow;">1</div>
+        <div class="large-10 large-offset-1 columns" style="background-color:pink;">10, offset 1</div>
+    </div>
+    <div class="row">
+        <div class="large-1 columns" style="background-color:yellow;">1</div>
+        <div class="large-9 large-offset-2 columns" style="background-color:pink;">9, offset 2</div>
+    </div>
+    <div class="row">
+        <div class="large-1 columns" style="background-color:yellow;">1</div>
+        <div class="large-8 large-offset-3 columns" style="background-color:pink;">8, offset 3</div>
+    </div>
+    <div class="row">
+        <h2>不完整列</h2>
+        <p>如果一行中的列数量之和不是 12 , Foundation 将自动将最后一列向右浮动，并使用空白来填充剩下的列。</p>
+        <p>可选项 <code>.end</code> 类用于设置最后一列的元素向左边浮动:</p>
+        <div class="medium-3 columns" style="background-color:yellow;">.medium-3</div>
+        <div class="medium-3 columns" style="background-color:yellow;">.medium-3</div>
+        <div class="medium-3 columns" style="background-color:yellow;">.medium-3</div>
+    </div>
+    <div class="row">
+        <div class="medium-3 columns" style="background-color:pink;">.medium-3</div>
+        <div class="medium-3 columns" style="background-color:pink;">.medium-3</div>
+        <div class="medium-3 columns end" style="background-color:pink;">.medium-3 .end</div>
+    </div>
+    <h2>Foundation 网格</h2>
+    <p>默认情况下，网格最大(<code>.row</code>) 宽度为 62.5rem。在宽屏上，当宽度大于 62.5rem, 列不会跨越页面的宽度， 即使宽度设定为 100%。但你可以通过 CSS 重新设置 max-width:</p>
+    <hr>
+
+    <div class="row">
+        <p>基本行 (max-width:62.5rem):</p>
+        <div class="small-6 columns" style="background-color:yellow;">.small-6</div>
+        <div class="small-6 columns" style="background-color:pink;">.small-6</div>
+    </div>
+    <br>
+
+    <div class="row example">
+        <p>行的max-width为 100% :</p>
+        <div class="small-6 columns" style="background-color:yellow;">.small-6</div>
+        <div class="small-6 columns" style="background-color:pink;">.small-6</div>
+    </div>
+    <div style="padding:20px;">
+        <h2>Foundation 网格</h2>
+        <p>外层容器使用类 .row，并指定背景颜色跨越整个页面：</p>
+
+        <div class="row" style="background-color:tomato;padding:25px;">
+            <p>Default Row with a tomato color and padding:</p>
+            <div class="small-6 columns" style="background-color:yellow;">.small-6</div>
+            <div class="small-6 columns" style="background-color:pink;">.small-6</div>
+        </div>
+        <br>
+
+        <div class="container" style="background-color:coral;padding:25px;">
+            <div class="row">
+                <p>Row with container:</p>
+                <div class="small-6 columns" style="background-color:yellow;">.small-6</div>
+                <div class="small-6 columns" style="background-color:pink;">.small-6</div>
+            </div>
+        </div>
+    </div>
+    <div style="padding:20px;">
+    </div>
+    <div style="padding:20px;">
+    </div>
+    <script src="5.5.3/js/jquery.min.js"></script>
+    <script src="5.5.3/js/foundation.min.js"></script>
+    <script src="5.5.3/js/modernizr.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(document).foundation();
+        })
+    </script>
+</body>
+
+</html>
